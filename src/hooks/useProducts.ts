@@ -15,12 +15,30 @@ export function useProducts() {
   const fetchProducts = async () => {
     setLoading(true);
     try {
-      const response = await fetch('/api/products');
-      if (!response.ok) {
-        throw new Error('Error al cargar los productos');
+      const { data, error } = await supabase
+        .from('products')
+        .select('*')
+        .order('created_at', { ascending: false });
+      if (error) {
+        throw error;
       }
-      const data = await response.json();
-      setProducts(data);
+      const mapped = (data || []).map((p: any) => ({
+        id: p.id,
+        title: p.title,
+        price: Number(p.price),
+        originalPrice: p.original_price ? Number(p.original_price) : undefined,
+        discount: p.discount ? Number(p.discount) : undefined,
+        store: p.store,
+        category: p.category,
+        image: p.image,
+        rating: Number(p.rating),
+        reviewsCount: Number(p.reviews_count),
+        url: p.url,
+        description: p.description,
+        specs: typeof p.specs === 'string' ? JSON.parse(p.specs) : p.specs,
+        featured: p.featured,
+      }));
+      setProducts(mapped);
     } catch (err: any) {
       setError(err.message || 'Error al cargar productos');
     } finally {
@@ -30,21 +48,16 @@ export function useProducts() {
 
   useEffect(() => {
     fetchProducts();
-    // Optional: real‑time subscription could be added here
   }, []);
 
   // ------- CRUD operations -------------------------------------------------
   const deleteProduct = async (id: string) => {
-    const token = localStorage.getItem('admin_token');
-    const response = await fetch(`/api/admin/products/${id}`, {
-      method: 'DELETE',
-      headers: {
-        'Authorization': `Bearer ${token}`
-      }
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al eliminar el producto');
+    const { error } = await supabase
+      .from('products')
+      .delete()
+      .eq('id', id);
+    if (error) {
+      throw error;
     }
     setProducts((prev) => prev.filter((p) => p.id !== id));
   };
@@ -52,18 +65,12 @@ export function useProducts() {
   const toggleFeatured = async (id: string) => {
     const product = products.find((p) => p.id === id);
     if (!product) return;
-    const token = localStorage.getItem('admin_token');
-    const response = await fetch(`/api/admin/products/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      },
-      body: JSON.stringify({ featured: !product.featured })
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al actualizar el producto');
+    const { error } = await supabase
+      .from('products')
+      .update({ featured: !product.featured })
+      .eq('id', id);
+    if (error) {
+      throw error;
     }
     setProducts((prev) =>
       prev.map((p) => (p.id === id ? { ...p, featured: !p.featured } : p))
@@ -73,35 +80,39 @@ export function useProducts() {
   const duplicateProduct = async (id: string) => {
     const product = products.find((p) => p.id === id);
     if (!product) return;
-    const token = localStorage.getItem('admin_token');
     const { id: _, ...productData } = product;
-    const newProduct = { ...productData, id: uuidv4() };
-    const response = await fetch('/api/admin/products', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      },
-      body: JSON.stringify(newProduct)
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al duplicar el producto');
+    const newId = uuidv4();
+    const { error } = await supabase
+      .from('products')
+      .insert({
+        id: newId,
+        title: productData.title,
+        price: productData.price,
+        original_price: productData.originalPrice,
+        discount: productData.discount,
+        store: productData.store,
+        category: productData.category,
+        image: productData.image,
+        rating: productData.rating,
+        reviews_count: productData.reviewsCount,
+        url: productData.url,
+        description: productData.description,
+        specs: productData.specs,
+        featured: productData.featured || false,
+      });
+    if (error) {
+      throw error;
     }
-    setProducts((prev) => [...prev, newProduct]);
+    setProducts((prev) => [...prev, { ...productData, id: newId }]);
   };
 
   const deleteAllProducts = async () => {
-    const token = localStorage.getItem('admin_token');
-    const response = await fetch('/api/admin/products', {
-      method: 'DELETE',
-      headers: {
-        'Authorization': `Bearer ${token}`
-      }
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al eliminar todos los productos');
+    const { error } = await supabase
+      .from('products')
+      .delete()
+      .neq('id', '');
+    if (error) {
+      throw error;
     }
     setProducts([]);
   };

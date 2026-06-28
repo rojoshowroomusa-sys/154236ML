@@ -25,32 +25,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
     setLoading(true);
 
     try {
-      if (isAdmin(email)) {
-        const response = await fetch('/api/admin/login', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, password })
-        });
-        if (!response.ok) {
-          const errData = await response.json();
-          throw new Error(errData.error || 'Credenciales de administrador inválidas');
-        }
-        const { token } = await response.json();
-        localStorage.setItem('admin_token', token);
-        const adminUser: User = {
-          id: 'admin',
-          username: 'Admin',
-          email,
-          avatar: '',
-          createdAt: new Date().toISOString(),
-          role: 'admin',
-        };
-        localStorage.setItem('user', JSON.stringify(adminUser));
-        onAuthSuccess(adminUser);
-        onClose();
-        return;
-      }
-let result;
+      let result;
       if (isSignUp) {
         result = await supabaseAuth.auth.signUp({
           email,
@@ -63,12 +38,27 @@ let result;
       const { data, error } = result;
       if (error) throw new Error(error.message);
       if (!data?.user) throw new Error('Usuario no encontrado');
+      
       // Store token for future auth
       if (data.session?.access_token) {
         localStorage.setItem('supabase_token', data.session.access_token);
+        if (isAdmin(email)) {
+          localStorage.setItem('admin_token', data.session.access_token);
+        }
       }
-      localStorage.setItem('user', JSON.stringify(data.user));
-      onAuthSuccess(data.user);
+      
+      const role: 'admin' | 'user' = isAdmin(email) ? 'admin' : 'user';
+      const userWithRole = {
+        id: data.user.id,
+        username: isAdmin(email) ? 'Admin' : (data.user.user_metadata?.username || data.user.email?.split('@')[0] || 'User'),
+        email: data.user.email || email,
+        avatar: data.user.user_metadata?.avatar || '',
+        createdAt: data.user.created_at,
+        role
+      };
+
+      localStorage.setItem('user', JSON.stringify(userWithRole));
+      onAuthSuccess(userWithRole);
       onClose();
     } catch (err: any) {
       setError(err.message);

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Coupon } from '../types';
 import { v4 as uuidv4 } from 'uuid';
+import { supabase } from '../lib/supabaseClient';
 
 /**
  * Custom hook that fetches coupons from Supabase and provides CRUD helpers.
@@ -14,12 +15,28 @@ export function useCoupons() {
   const fetchCoupons = async () => {
     setLoading(true);
     try {
-      const response = await fetch('/api/coupons');
-      if (!response.ok) {
-        throw new Error('Error al cargar los cupones');
+      const { data, error } = await supabase
+        .from('coupons')
+        .select('*')
+        .order('created_at', { ascending: false });
+      if (error) {
+        throw error;
       }
-      const data = await response.json();
-      setCoupons(data);
+      const mapped = (data || []).map((c: any) => ({
+        id: c.id,
+        code: c.code,
+        store: c.store,
+        discount: c.discount,
+        discountValue: Number(c.discount_value),
+        minOrder: c.min_order ? Number(c.min_order) : undefined,
+        description: c.description,
+        category: c.category || undefined,
+        expiresAt: c.expires_at,
+        isHot: c.is_hot,
+        maxUses: c.max_uses ? Number(c.max_uses) : undefined,
+        usedCount: Number(c.used_count),
+      }));
+      setCoupons(mapped);
     } catch (err: any) {
       setError(err.message || 'Error al cargar cupones');
     } finally {
@@ -33,16 +50,12 @@ export function useCoupons() {
 
   // ------- CRUD operations -------------------------------------------------
   const deleteCoupon = async (id: string) => {
-    const token = localStorage.getItem('admin_token');
-    const response = await fetch(`/api/admin/coupons/${id}`, {
-      method: 'DELETE',
-      headers: {
-        'Authorization': `Bearer ${token}`
-      }
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al eliminar el cupón');
+    const { error } = await supabase
+      .from('coupons')
+      .delete()
+      .eq('id', id);
+    if (error) {
+      throw error;
     }
     setCoupons((prev) => prev.filter((c) => c.id !== id));
   };
@@ -50,18 +63,12 @@ export function useCoupons() {
   const toggleHot = async (id: string) => {
     const coupon = coupons.find((c) => c.id === id);
     if (!coupon) return;
-    const token = localStorage.getItem('admin_token');
-    const response = await fetch(`/api/admin/coupons/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      },
-      body: JSON.stringify({ isHot: !coupon.isHot })
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al actualizar el cupón');
+    const { error } = await supabase
+      .from('coupons')
+      .update({ is_hot: !coupon.isHot })
+      .eq('id', id);
+    if (error) {
+      throw error;
     }
     setCoupons((prev) =>
       prev.map((c) => (c.id === id ? { ...c, isHot: !c.isHot } : c))
@@ -71,40 +78,42 @@ export function useCoupons() {
   const duplicateCoupon = async (id: string) => {
     const coupon = coupons.find((c) => c.id === id);
     if (!coupon) return;
-    const token = localStorage.getItem('admin_token');
     const { id: _, ...couponData } = coupon;
     
     // Create unique code by adding a suffix
     const randomSuffix = Math.floor(1000 + Math.random() * 9000);
     const newCode = `${couponData.code}_${randomSuffix}`;
-    const newCoupon = { ...couponData, id: uuidv4(), code: newCode };
+    const newId = uuidv4();
 
-    const response = await fetch('/api/admin/coupons', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      },
-      body: JSON.stringify(newCoupon)
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al duplicar el cupón');
+    const { error } = await supabase
+      .from('coupons')
+      .insert({
+        id: newId,
+        code: newCode,
+        store: couponData.store,
+        discount: couponData.discount,
+        discount_value: couponData.discountValue,
+        min_order: couponData.minOrder,
+        description: couponData.description,
+        category: couponData.category,
+        expires_at: couponData.expiresAt,
+        is_hot: couponData.isHot || false,
+        max_uses: couponData.maxUses,
+        used_count: couponData.usedCount || 0,
+      });
+    if (error) {
+      throw error;
     }
-    setCoupons((prev) => [...prev, newCoupon]);
+    setCoupons((prev) => [...prev, { ...couponData, id: newId, code: newCode }]);
   };
 
   const deleteAllCoupons = async () => {
-    const token = localStorage.getItem('admin_token');
-    const response = await fetch('/api/admin/coupons', {
-      method: 'DELETE',
-      headers: {
-        'Authorization': `Bearer ${token}`
-      }
-    });
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error || 'Error al eliminar todos los cupones');
+    const { error } = await supabase
+      .from('coupons')
+      .delete()
+      .neq('id', '');
+    if (error) {
+      throw error;
     }
     setCoupons([]);
   };
