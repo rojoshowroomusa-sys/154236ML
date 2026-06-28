@@ -6,6 +6,11 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, process.cwd(), '');
   
+  console.log('--- BUILD ENVIRONMENT DEBUG ---');
+  console.log('Available process.env keys:', Object.keys(process.env).filter(k => k.startsWith('VITE_')));
+  console.log('Available loadEnv keys:', Object.keys(env).filter(k => k.startsWith('VITE_')));
+  console.log('-------------------------------');
+
   return {
     plugins: [react(), tailwindcss()],
     resolve: {
