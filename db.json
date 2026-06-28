@@ -1,0 +1,1056 @@
+{
+  "users": [
+    {
+      "id": "user-demo",
+      "username": "Lucas_Offers",
+      "email": "lucas@globalshop.com",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2026-06-27T18:12:30.555Z"
+    },
+    {
+      "id": "user-sim-1",
+      "username": "Sofia_Techie",
+      "email": "sofia@globalshop.com",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2026-06-27T18:12:30.556Z"
+    },
+    {
+      "id": "user-sim-2",
+      "username": "Marc_Gamer",
+      "email": "marc@globalshop.com",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2026-06-27T18:12:30.556Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "sim-c-1782656679448",
+      "productId": "am-4",
+      "userId": "sim-user-1782656679448",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T14:24:39.448Z"
+    },
+    {
+      "id": "sim-c-1782656694454",
+      "productId": "out-3",
+      "userId": "sim-user-1782656694454",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T14:24:54.454Z"
+    },
+    {
+      "id": "sim-c-1782656838673",
+      "productId": "tl-1",
+      "userId": "sim-user-1782656838673",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T14:27:18.673Z"
+    },
+    {
+      "id": "sim-c-1782656883702",
+      "productId": "al-3",
+      "userId": "sim-user-1782656883702",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T14:28:03.702Z"
+    },
+    {
+      "id": "sim-c-1782656952882",
+      "productId": "am-4",
+      "userId": "sim-user-1782656952882",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T14:29:12.882Z"
+    },
+    {
+      "id": "sim-c-1782656982906",
+      "productId": "ent-1",
+      "userId": "sim-user-1782656982906",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T14:29:42.906Z"
+    },
+    {
+      "id": "sim-c-1782657012927",
+      "productId": "tm-3",
+      "userId": "sim-user-1782657012927",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T14:30:12.927Z"
+    },
+    {
+      "id": "sim-c-1782657087969",
+      "productId": "al-6",
+      "userId": "sim-user-1782657087969",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T14:31:27.969Z"
+    },
+    {
+      "id": "sim-c-1782657102979",
+      "productId": "ent-1",
+      "userId": "sim-user-1782657102979",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T14:31:42.979Z"
+    },
+    {
+      "id": "sim-c-1782657132988",
+      "productId": "ml-3",
+      "userId": "sim-user-1782657132988",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T14:32:12.988Z"
+    },
+    {
+      "id": "sim-c-1782657492548",
+      "productId": "tm-3",
+      "userId": "sim-user-1782657492548",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T14:38:12.548Z"
+    },
+    {
+      "id": "sim-c-1782657567609",
+      "productId": "ent-1",
+      "userId": "sim-user-1782657567609",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T14:39:27.609Z"
+    },
+    {
+      "id": "sim-c-1782661292972",
+      "productId": "al-1",
+      "userId": "sim-user-1782661292972",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T15:41:32.972Z"
+    },
+    {
+      "id": "sim-c-1782661443060",
+      "productId": "al-5",
+      "userId": "sim-user-1782661443060",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T15:44:03.060Z"
+    },
+    {
+      "id": "sim-c-1782661608140",
+      "productId": "fa-2",
+      "userId": "sim-user-1782661608140",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T15:46:48.140Z"
+    },
+    {
+      "id": "sim-c-1782661638163",
+      "productId": "out-3",
+      "userId": "sim-user-1782661638163",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T15:47:18.163Z"
+    },
+    {
+      "id": "sim-c-1782661668184",
+      "productId": "ent-1",
+      "userId": "sim-user-1782661668184",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T15:47:48.184Z"
+    },
+    {
+      "id": "sim-c-1782661758225",
+      "productId": "al-5",
+      "userId": "sim-user-1782661758225",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T15:49:18.225Z"
+    },
+    {
+      "id": "sim-c-1782662058395",
+      "productId": "ent-1",
+      "userId": "sim-user-1782662058395",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T15:54:18.395Z"
+    },
+    {
+      "id": "sim-c-1782662193452",
+      "productId": "tm-2",
+      "userId": "sim-user-1782662193452",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T15:56:33.452Z"
+    },
+    {
+      "id": "sim-c-1782662343499",
+      "productId": "tm-4",
+      "userId": "sim-user-1782662343499",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T15:59:03.499Z"
+    },
+    {
+      "id": "sim-c-1782662388535",
+      "productId": "al-5",
+      "userId": "sim-user-1782662388535",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T15:59:48.535Z"
+    },
+    {
+      "id": "sim-c-1782662463560",
+      "productId": "tl-1",
+      "userId": "sim-user-1782662463560",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T16:01:03.560Z"
+    },
+    {
+      "id": "sim-c-1782662478569",
+      "productId": "tm-2",
+      "userId": "sim-user-1782662478569",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T16:01:18.569Z"
+    },
+    {
+      "id": "sim-c-1782662613645",
+      "productId": "ent-1",
+      "userId": "sim-user-1782662613645",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T16:03:33.645Z"
+    },
+    {
+      "id": "sim-c-1782662913772",
+      "productId": "tl-2",
+      "userId": "sim-user-1782662913772",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T16:08:33.772Z"
+    },
+    {
+      "id": "sim-c-1782663123881",
+      "productId": "tm-1",
+      "userId": "sim-user-1782663123881",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T16:12:03.881Z"
+    },
+    {
+      "id": "sim-c-1782663138893",
+      "productId": "tm-1",
+      "userId": "sim-user-1782663138893",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T16:12:18.893Z"
+    },
+    {
+      "id": "sim-c-1782663529143",
+      "productId": "ml-2",
+      "userId": "sim-user-1782663529143",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T16:18:49.143Z"
+    },
+    {
+      "id": "sim-c-1782663559158",
+      "productId": "al-2",
+      "userId": "sim-user-1782663559158",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T16:19:19.158Z"
+    },
+    {
+      "id": "sim-c-1782663604180",
+      "productId": "out-2",
+      "userId": "sim-user-1782663604180",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T16:20:04.180Z"
+    },
+    {
+      "id": "sim-c-1782663841413",
+      "productId": "tm-4",
+      "userId": "sim-user-1782663841413",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T16:24:01.413Z"
+    },
+    {
+      "id": "sim-c-1782663886448",
+      "productId": "ent-3",
+      "userId": "sim-user-1782663886448",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T16:24:46.448Z"
+    },
+    {
+      "id": "sim-c-1782664066528",
+      "productId": "tl-2",
+      "userId": "sim-user-1782664066528",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T16:27:46.528Z"
+    },
+    {
+      "id": "sim-c-1782664414615",
+      "productId": "am-2",
+      "userId": "sim-user-1782664414615",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T16:33:34.615Z"
+    },
+    {
+      "id": "sim-c-1782664474656",
+      "productId": "al-6",
+      "userId": "sim-user-1782664474656",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T16:34:34.656Z"
+    },
+    {
+      "id": "sim-c-1782664519678",
+      "productId": "tm-2",
+      "userId": "sim-user-1782664519678",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T16:35:19.678Z"
+    },
+    {
+      "id": "sim-c-1782664534684",
+      "productId": "tm-1",
+      "userId": "sim-user-1782664534684",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T16:35:34.684Z"
+    },
+    {
+      "id": "sim-c-1782664549693",
+      "productId": "ml-2",
+      "userId": "sim-user-1782664549693",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T16:35:49.693Z"
+    },
+    {
+      "id": "sim-c-1782664579712",
+      "productId": "fa-2",
+      "userId": "sim-user-1782664579712",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T16:36:19.712Z"
+    },
+    {
+      "id": "sim-c-1782664744823",
+      "productId": "fa-1",
+      "userId": "sim-user-1782664744823",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T16:39:04.823Z"
+    },
+    {
+      "id": "sim-c-1782664759835",
+      "productId": "tl-3",
+      "userId": "sim-user-1782664759835",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T16:39:19.835Z"
+    },
+    {
+      "id": "sim-c-1782664789856",
+      "productId": "ent-3",
+      "userId": "sim-user-1782664789856",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T16:39:49.856Z"
+    },
+    {
+      "id": "sim-c-1782665314323",
+      "productId": "tm-2",
+      "userId": "sim-user-1782665314323",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T16:48:34.323Z"
+    },
+    {
+      "id": "sim-c-1782665345096",
+      "productId": "ml-2",
+      "userId": "sim-user-1782665345096",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T16:49:05.096Z"
+    },
+    {
+      "id": "sim-c-1782665731449",
+      "productId": "out-2",
+      "userId": "sim-user-1782665731449",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T16:55:31.449Z"
+    },
+    {
+      "id": "sim-c-1782666061566",
+      "productId": "al-4",
+      "userId": "sim-user-1782666061566",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T17:01:01.566Z"
+    },
+    {
+      "id": "sim-c-1782666091574",
+      "productId": "tm-3",
+      "userId": "sim-user-1782666091574",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:01:31.574Z"
+    },
+    {
+      "id": "sim-c-1782666106574",
+      "productId": "tl-1",
+      "userId": "sim-user-1782666106574",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T17:01:46.574Z"
+    },
+    {
+      "id": "sim-c-1782666228933",
+      "productId": "out-2",
+      "userId": "sim-user-1782666228933",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T17:03:48.933Z"
+    },
+    {
+      "id": "sim-c-1782666292185",
+      "productId": "al-4",
+      "userId": "sim-user-1782666292185",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T17:04:52.185Z"
+    },
+    {
+      "id": "sim-c-1782666307192",
+      "productId": "al-5",
+      "userId": "sim-user-1782666307192",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:05:07.192Z"
+    },
+    {
+      "id": "sim-c-1782667068817",
+      "productId": "out-1",
+      "userId": "sim-user-1782667068817",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T17:17:48.817Z"
+    },
+    {
+      "id": "sim-c-1782667158847",
+      "productId": "fa-1",
+      "userId": "sim-user-1782667158847",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T17:19:18.847Z"
+    },
+    {
+      "id": "sim-c-1782667173846",
+      "productId": "out-3",
+      "userId": "sim-user-1782667173846",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T17:19:33.846Z"
+    },
+    {
+      "id": "sim-c-1782667338923",
+      "productId": "fa-2",
+      "userId": "sim-user-1782667338923",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:22:18.923Z"
+    },
+    {
+      "id": "sim-c-1782667353925",
+      "productId": "tm-4",
+      "userId": "sim-user-1782667353925",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T17:22:33.925Z"
+    },
+    {
+      "id": "sim-c-1782667428959",
+      "productId": "am-4",
+      "userId": "sim-user-1782667428959",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:23:48.959Z"
+    },
+    {
+      "id": "sim-c-1782667473988",
+      "productId": "out-2",
+      "userId": "sim-user-1782667473988",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:24:33.988Z"
+    },
+    {
+      "id": "sim-c-1782667504016",
+      "productId": "al-5",
+      "userId": "sim-user-1782667504016",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T17:25:04.016Z"
+    },
+    {
+      "id": "sim-c-1782667519031",
+      "productId": "ml-2",
+      "userId": "sim-user-1782667519031",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T17:25:19.031Z"
+    },
+    {
+      "id": "sim-c-1782667609072",
+      "productId": "ent-1",
+      "userId": "sim-user-1782667609072",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:26:49.072Z"
+    },
+    {
+      "id": "sim-c-1782667729125",
+      "productId": "ml-1",
+      "userId": "sim-user-1782667729125",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T17:28:49.125Z"
+    },
+    {
+      "id": "sim-c-1782667774141",
+      "productId": "ent-2",
+      "userId": "sim-user-1782667774141",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T17:29:34.141Z"
+    },
+    {
+      "id": "sim-c-1782667879180",
+      "productId": "tm-3",
+      "userId": "sim-user-1782667879180",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:31:19.180Z"
+    },
+    {
+      "id": "sim-c-1782668299428",
+      "productId": "tm-3",
+      "userId": "sim-user-1782668299428",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T17:38:19.428Z"
+    },
+    {
+      "id": "sim-c-1782668314438",
+      "productId": "am-4",
+      "userId": "sim-user-1782668314438",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T17:38:34.438Z"
+    },
+    {
+      "id": "sim-c-1782668329446",
+      "productId": "tl-2",
+      "userId": "sim-user-1782668329446",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T17:38:49.446Z"
+    },
+    {
+      "id": "sim-c-1782668344457",
+      "productId": "ml-4",
+      "userId": "sim-user-1782668344457",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T17:39:04.457Z"
+    },
+    {
+      "id": "sim-c-1782668464537",
+      "productId": "tl-3",
+      "userId": "sim-user-1782668464537",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T17:41:04.537Z"
+    },
+    {
+      "id": "sim-c-1782668538037",
+      "productId": "am-4",
+      "userId": "sim-user-1782668538037",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T17:42:18.037Z"
+    },
+    {
+      "id": "sim-c-1782668748170",
+      "productId": "al-1",
+      "userId": "sim-user-1782668748170",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T17:45:48.170Z"
+    },
+    {
+      "id": "sim-c-1782668778184",
+      "productId": "al-2",
+      "userId": "sim-user-1782668778184",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T17:46:18.184Z"
+    },
+    {
+      "id": "sim-c-1782668793199",
+      "productId": "out-2",
+      "userId": "sim-user-1782668793199",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T17:46:33.199Z"
+    },
+    {
+      "id": "sim-c-1782668913275",
+      "productId": "ml-4",
+      "userId": "sim-user-1782668913275",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Amazing quality, absolutely worth the investment.",
+      "timestamp": "2026-06-28T17:48:33.275Z"
+    },
+    {
+      "id": "sim-c-1782669063364",
+      "productId": "al-4",
+      "userId": "sim-user-1782669063364",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T17:51:03.364Z"
+    },
+    {
+      "id": "sim-c-1782669228470",
+      "productId": "fa-2",
+      "userId": "sim-user-1782669228470",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T17:53:48.470Z"
+    },
+    {
+      "id": "sim-c-1782669243485",
+      "productId": "al-5",
+      "userId": "sim-user-1782669243485",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T17:54:03.485Z"
+    },
+    {
+      "id": "sim-c-1782669453608",
+      "productId": "ml-4",
+      "userId": "sim-user-1782669453608",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T17:57:33.608Z"
+    },
+    {
+      "id": "sim-c-1782669528625",
+      "productId": "ent-1",
+      "userId": "sim-user-1782669528625",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T17:58:48.625Z"
+    },
+    {
+      "id": "sim-c-1782669663746",
+      "productId": "ent-3",
+      "userId": "sim-user-1782669663746",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Just ordered one of these, let's see when it arrives.",
+      "timestamp": "2026-06-28T18:01:03.746Z"
+    },
+    {
+      "id": "sim-c-1782669708774",
+      "productId": "fa-2",
+      "userId": "sim-user-1782669708774",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T18:01:48.774Z"
+    },
+    {
+      "id": "sim-c-1782669738790",
+      "productId": "tl-2",
+      "userId": "sim-user-1782669738790",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T18:02:18.790Z"
+    },
+    {
+      "id": "sim-c-1782669753789",
+      "productId": "al-1",
+      "userId": "sim-user-1782669753789",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T18:02:33.789Z"
+    },
+    {
+      "id": "sim-c-1782669888882",
+      "productId": "am-1",
+      "userId": "sim-user-1782669888882",
+      "username": "Elena_Pro",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T18:04:48.882Z"
+    },
+    {
+      "id": "sim-c-1782670113987",
+      "productId": "ml-3",
+      "userId": "sim-user-1782670113987",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T18:08:33.987Z"
+    },
+    {
+      "id": "sim-c-1782670414155",
+      "productId": "fa-2",
+      "userId": "sim-user-1782670414155",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T18:13:34.155Z"
+    },
+    {
+      "id": "sim-c-1782670429154",
+      "productId": "ml-3",
+      "userId": "sim-user-1782670429154",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T18:13:49.154Z"
+    },
+    {
+      "id": "sim-c-1782670504185",
+      "productId": "tl-2",
+      "userId": "sim-user-1782670504185",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T18:15:04.185Z"
+    },
+    {
+      "id": "sim-c-1782670534200",
+      "productId": "al-2",
+      "userId": "sim-user-1782670534200",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T18:15:34.200Z"
+    },
+    {
+      "id": "sim-c-1782670549215",
+      "productId": "am-2",
+      "userId": "sim-user-1782670549215",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T18:15:49.215Z"
+    },
+    {
+      "id": "sim-c-1782670624260",
+      "productId": "al-4",
+      "userId": "sim-user-1782670624260",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T18:17:04.260Z"
+    },
+    {
+      "id": "sim-c-1782670684291",
+      "productId": "ml-4",
+      "userId": "sim-user-1782670684291",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T18:18:04.291Z"
+    },
+    {
+      "id": "sim-c-1782671949447",
+      "productId": "am-1",
+      "userId": "sim-user-1782671949447",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T18:39:09.447Z"
+    },
+    {
+      "id": "sim-c-1782672009476",
+      "productId": "al-3",
+      "userId": "sim-user-1782672009476",
+      "username": "Valentina_Style",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "Anyone knows if this shipping is reliable?",
+      "timestamp": "2026-06-28T18:40:09.476Z"
+    },
+    {
+      "id": "sim-c-1782672069494",
+      "productId": "fa-1",
+      "userId": "sim-user-1782672069495",
+      "username": "Alex_Shop",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+      "text": "Highly recommended, perfect design and ergonomics.",
+      "timestamp": "2026-06-28T18:41:09.495Z"
+    },
+    {
+      "id": "sim-c-1782672144546",
+      "productId": "tl-3",
+      "userId": "sim-user-1782672144546",
+      "username": "Mateo_S",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "I have been tracking this product for a month, this is the lowest price yet.",
+      "timestamp": "2026-06-28T18:42:24.546Z"
+    },
+    {
+      "id": "sim-c-1782672271551",
+      "productId": "out-2",
+      "userId": "sim-user-1782672271551",
+      "username": "Thiago_W",
+      "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T18:44:31.551Z"
+    },
+    {
+      "id": "sim-c-1782672316587",
+      "productId": "tl-1",
+      "userId": "sim-user-1782672316587",
+      "username": "Camila_Dev",
+      "userAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T18:45:16.587Z"
+    },
+    {
+      "id": "sim-c-1782672376622",
+      "productId": "tl-2",
+      "userId": "sim-user-1782672376622",
+      "username": "Nico_G",
+      "userAvatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=150",
+      "text": "The price is really good compared to other stores!",
+      "timestamp": "2026-06-28T18:46:16.622Z"
+    }
+  ],
+  "bookmarks": [
+    {
+      "userId": "user-demo",
+      "productId": "ml-1",
+      "timestamp": "2026-06-27T18:12:30.556Z"
+    },
+    {
+      "userId": "user-sim-1",
+      "productId": "am-1",
+      "timestamp": "2026-06-27T18:12:30.556Z"
+    }
+  ],
+  "priceAlerts": [
+    {
+      "id": "a-1",
+      "productId": "ml-1",
+      "userId": "user-demo",
+      "targetPrice": 320,
+      "createdAt": "2026-06-27T18:12:30.556Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "amz-1",
+      "code": "AMAZON15",
+      "store": "Amazon",
+      "discount": "15% DTO",
+      "discountValue": 15,
+      "minOrder": 30,
+      "description": "Electrónica y gadgets tecnológicos",
+      "category": "Electronics",
+      "expiresAt": "2026-06-30T05:41:48.009Z",
+      "isHot": true,
+      "maxUses": 500,
+      "usedCount": 314
+    },
+    {
+      "id": "amz-2",
+      "code": "PRIMEDAY10",
+      "store": "Amazon",
+      "discount": "$10 DTO",
+      "discountValue": 10,
+      "minOrder": 50,
+      "description": "Cualquier categoría, mínimo $50",
+      "expiresAt": "2026-07-01T17:41:48.010Z",
+      "isHot": false,
+      "maxUses": 1000,
+      "usedCount": 441
+    },
+    {
+      "id": "ml-1",
+      "code": "MELI20NOW",
+      "store": "Mercado Libre",
+      "discount": "20% DTO",
+      "discountValue": 20,
+      "minOrder": 25,
+      "description": "Artículos para el hogar y cocina",
+      "category": "Home & Kitchen",
+      "expiresAt": "2026-06-29T17:41:48.010Z",
+      "isHot": true,
+      "maxUses": 300,
+      "usedCount": 256
+    },
+    {
+      "id": "ml-2",
+      "code": "MELIFREE",
+      "store": "Mercado Libre",
+      "discount": "Envío GRATIS",
+      "discountValue": 5,
+      "description": "Envío gratis en cualquier compra",
+      "expiresAt": "2026-06-30T17:41:48.010Z",
+      "isHot": false,
+      "maxUses": 2000,
+      "usedCount": 880
+    },
+    {
+      "id": "ali-1",
+      "code": "ALISUPER",
+      "store": "AliExpress",
+      "discount": "$5 DTO",
+      "discountValue": 5,
+      "minOrder": 20,
+      "description": "Cualquier compra mayor a $20",
+      "expiresAt": "2026-06-29T05:41:48.010Z",
+      "isHot": true,
+      "maxUses": 5000,
+      "usedCount": 4120
+    },
+    {
+      "id": "ali-2",
+      "code": "ALITECH30",
+      "store": "AliExpress",
+      "discount": "30% DTO",
+      "discountValue": 30,
+      "minOrder": 40,
+      "description": "Solo electrónica, mínimo $40",
+      "category": "Electronics",
+      "expiresAt": "2026-07-01T05:41:48.010Z",
+      "isHot": false,
+      "maxUses": 800,
+      "usedCount": 390
+    },
+    {
+      "id": "tm-1",
+      "code": "TEMU40OFF",
+      "store": "Temu",
+      "discount": "40% DTO",
+      "discountValue": 40,
+      "minOrder": 15,
+      "description": "Tu primera compra en Temu",
+      "expiresAt": "2026-07-02T17:41:48.010Z",
+      "isHot": true,
+      "maxUses": 10000,
+      "usedCount": 7230
+    },
+    {
+      "id": "tm-2",
+      "code": "TEMUNEW15",
+      "store": "Temu",
+      "discount": "$15 DTO",
+      "discountValue": 15,
+      "minOrder": 50,
+      "description": "Nuevos usuarios, mínimo $50",
+      "expiresAt": "2026-07-03T17:41:48.010Z",
+      "isHot": false,
+      "maxUses": 3000,
+      "usedCount": 1540
+    }
+  ]
+}

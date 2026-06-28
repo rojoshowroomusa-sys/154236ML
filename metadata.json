@@ -1,0 +1,6 @@
+{
+  "name": "GlobalShop Deals",
+  "description": "Unified dashboard to search and compare deals from Amazon, Mercado Libre, and AliExpress with real-time community activity and user accounts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
